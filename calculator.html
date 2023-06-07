@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Peta Interaktif Kasus Stunting</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="author" content="" />
+    <meta name="description" content="SIMKEL">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,800,700,600|Montserrat:400,500,600,700|Raleway:100,300,600,700,800" rel="stylesheet" type="text/css" />
+    <link href="https://simkel.web.id/assets/website/css/plugins.css" rel="stylesheet">
+    <link href="https://simkel.web.id/assets/website/css/style.css" rel="stylesheet">
+    <link href="https://simkel.web.id/assets/website/css/red.css" rel="stylesheet">
+    <link href="https://simkel.web.id/assets/website/css/responsive.css" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="https://simkel.web.id/assets/img/favicon.png" />
+    <script src="https://simkel.web.id/assets/website/js/calculators.js"></script>
+
+</head>
+
+<nav>
+    <div class="navbar">
+        <div class="menu">
+            <a href="peta_stunting.html">Home</a>
+            <a href="calculator.html" class="active">Calculator</a>
+            <a href="dashboard.html">DashBoard</a>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+</nav>
+
+
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Content -->
+        <section id="page-content">
+            <div class="container">
+                <div class="row">
+                    <h3 class="text-center">Kalkulator Stunting</h3>
+
+                    <div class="col-md-12">
+                        <form iclass="form-horizontal" method="post" action="#" enctype="application/x-www-form-urlencoded">
+                            <div class="col-md-4">
+                                <div class="panel panel-primary">
+                                    <div class="panel-body">
+
+                                        <fieldset id="DataDasar">
+                                            <div class="form-group">
+                                                <label for="nama"><span>Nama:</span><br>
+                                <input type="text" class="form-control" id="nama" placeholder="Nama Anak" required>
+                            </label>
+                                                <label for="umurBulan">	<span>Umur Bulan:</span>		<input type="text" class="form-control" id="umurBulan" placeholder="Umur Anak sampai 0-24 bulan" required></label>
+                                                <label for="bb">		<span>Berat Badan (kg):</span>	<input type="text" class="form-control" id="bb" placeholder="Berat Badan Anak" required></label>
+                                                <label for="tb">		<span>Tinggi Badan (cm):</span>	<input type="text" class="form-control" id="tb" placeholder="Tinggi Anak 45cm - 110cm" required></label>
+                                                <label>					<span>Jenis Kelamin:</span><br>
+                                <input type="radio" name="jk" id="laki-laki" value="laki-laki"/> Laki-laki
+                                <input type="radio" name="jk" id="perempuan" value="perempuan"/> Perempuan</label>
+                                                <hr>
+                                                <button type="button" class="btn btn-rounded btn-reveal btn-sm" onClick="calculateWHO()"><span>Hitung</span><i class="fa fa-arrow-right"></i></button>
+                                            </div>
+                                        </fieldset>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-8">
+                                <fieldset id="hasil">
+                                    <div class="label_atas">HASIL ANALISIS</div>
+                                    <div class="form-group">
+                                        <label for="bbu"><span>Berat Badan menurut Umur : </span><br>
+                        <input type="text" class="form-control" id="bbu" style="background-color: #F5F7F7">
+                    </label>
+                                        <label for="tbu"><span>Tinggi Badan menurut Umur:</span>
+                        <input type="text" class="form-control" id="tbu" style="background-color: #F5F7F7">
+                    </label>
+                                        <label for="bbtb">
+                        <span>Berat Badan menurut Tinggi Badan:</span>
+                        <input type="text" class="form-control" id="bbtb" style="background-color: #F5F7F7">
+                    </label>
+                                        <label for="rekombbu">
+                        <span>Rekomendasi Berat Badan menurut Umur:</span> 	
+                        <input type="text" class="form-control" id="rekombbu" style="background-color: #F5F7F7">
+                    </label>
+                                        <label for="rekomtbu">
+                        <span>Rekomendasi Tinggi Badan menurut Umur:</span>	
+                        <input type="text" class="form-control" id="rekomtbu" style="background-color: #F5F7F7">
+                    </label>
+                                        <label for="rekombbtb">
+                        <span>Rekomendasi Berat Badan menurut Tinggi Badan:</span>
+                        <input type="text" class="form-control" id="rekombbtb" style="background-color: #F5F7F7"></label>
+                                        <input type="reset" class="btn btn-rounded btn-reveal btn-sm red" value="Reset" />
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- end: Wrapper -->
+
+
+
+    <!--Plugins-->
+    <script src="https://simkel.web.id/assets/website/js/jquery.js"></script>
+    <script src="https://simkel.web.id/assets/website/js/plugins.js"></script>
+
+    <!--Template functions-->
+    <script src="https://simkel.web.id/assets/website/js/functions.js"></script>
+</body>
+
+</html>
+
+
+<script src="mapbox-gl.js"></script>
+</body>
+
+</html>

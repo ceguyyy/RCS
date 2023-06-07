@@ -1,0 +1,186 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.3786, -7.797068]
+      },
+      "properties": {
+        "province": "DI Yogyakarta",
+        "stunting_cases": 15425,
+        "stunting_rate": 9.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [112.7508, -7.2575]
+      },
+      "properties": {
+        "province": "Jawa Timur",
+        "stunting_cases": 190158,
+        "stunting_rate": 9.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [110.416664, -6.966667]
+      },
+      "properties": {
+        "province": "Jawa Tengah",
+        "stunting_cases": 184364,
+        "stunting_rate": 9.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [107.6186, -6.9204]
+      },
+      "properties": {
+        "province": "Jawa Barat",
+        "stunting_cases": 221065,
+        "stunting_rate": 6.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.064, -6.4058]
+      },
+      "properties": {
+        "province": "Banten",
+        "stunting_cases": 53354,
+        "stunting_rate": 6.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [106.8361, -6.2047]
+      },
+      "properties": {
+        "province": "DKI Jakarta",
+        "stunting_cases": 5160,
+        "stunting_rate": 1.2
+      }
+    },
+
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [96.7493993, 4.695135]
+      },
+      "properties": {
+        "province": "Aceh",
+        "stunting_cases": 65000,
+        "stunting_rate": 28.3
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [99.0565, 1.2656]
+      },
+      "properties": {
+        "province": "Sumatera Utara",
+        "stunting_cases": 95000,
+        "stunting_rate": 23.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.6596, -0.8406]
+      },
+      "properties": {
+        "province": "Sumatera Barat",
+        "stunting_cases": 55000,
+        "stunting_rate": 19.8
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.8208, 1.5391]
+      },
+      "properties": {
+        "province": "Riau",
+        "stunting_cases": 80000,
+        "stunting_rate": 27.5
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [102.5528, -0.887]
+      },
+      "properties": {
+        "province": "Jambi",
+        "stunting_cases": 35000,
+        "stunting_rate": 17.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [102.2516, 0.8519]
+      },
+      "properties": {
+        "province": "Sumatera Selatan",
+        "stunting_cases": 75000,
+        "stunting_rate": 21.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [101.9758, -2.218]
+      },
+      "properties": {
+        "province": "Bangka Belitung",
+        "stunting_cases": 15000,
+        "stunting_rate": 12.4
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.545, -2.5842]
+      },
+      "properties": {
+        "province": "Bengkulu",
+        "stunting_cases": 30000,
+        "stunting_rate": 20.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [102.4886, -3.3167]
+      },
+      "properties": {
+        "province": "Lampung",
+        "stunting_cases": 65000,
+        "stunting_rate": 23.5
+      }
+    }
+  ]
+}
